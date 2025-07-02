@@ -41,52 +41,69 @@ public class AccountRegistrationPage extends Basepage {
 
 	// actions<ethod
 
-	public void fillName() {
+	public void fillName(String name) {
 
-		txtMyName.sendKeys("vasu");
-
-	}
-
-	public void email() {
-
-		txtEmail.sendKeys("vasu@gmail.com");
+		txtMyName.sendKeys(name);
 
 	}
 
-	public void confirmMail() {
-		txtConfirmEmail.sendKeys("vasu@gmail.com");
+	public void email(String email) {
+
+		txtEmail.sendKeys(email);
 
 	}
 
-	public void password() {
-
-		txtPassword.sendKeys("Vasu123");
-
-	}
-
-	public void confirmPassowrd() {
-
-		txtConfirmPassword.sendKeys("Vasu123");
+	public void confirmMail(String cEmail) {
+		txtConfirmEmail.sendKeys(cEmail);
 
 	}
 
-	public void phoneNum() {
-		txtPhnNumber.sendKeys("9894261711");
+	public void password(String pass) {
+
+		txtPassword.sendKeys(pass);
+
+	}
+
+	public void confirmPassowrd(String cPass) {
+
+		txtConfirmPassword.sendKeys(cPass);
+
+	}
+
+	public void phoneNum(String number) {
+		txtPhnNumber.sendKeys(number);
 
 	}
 
 	public void clickCreate() {
-		//createAcct.click();
+		createAcct.click();
 	
 	
-	WebDriverWait myWait=new WebDriverWait(driver,Duration.ofSeconds(10));
+	/*WebDriverWait myWait=new WebDriverWait(driver,Duration.ofSeconds(10));
 	
 	myWait.until(ExpectedConditions.elementToBeClickable(createAcct)).click();
 	
-	
+	*/
 	
 	
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
